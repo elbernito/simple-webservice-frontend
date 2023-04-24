@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Simple webservice versioning test</title>
+
+    <style>
+        body {
+            margin: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            /*padding: 3rem 1.5rem;*/
+            /*text-align: center;*/
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #0000FF;
+        }
+
+        h2 {
+            color: #2d44af;
+        }
+        .headerCell{
+            width: 100px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <h2>Frontend version</h2>
+    <table>
+        <tr>
+            <td class="headerCell">Id</td>
+            <td><span th:text="${localId}"></span></td>
+        </tr>
+        <tr>
+            <td class="headerCell">GroupID</td>
+            <td><span th:text="${localGroupId}"></span></td>
+        </tr>
+        <tr>
+            <td class="headerCell">ArtifactId</td>
+            <td><span th:text="${localArtifactId}"></span></td>
+        </tr>
+        <tr>
+            <td class="headerCell">Version</td>
+            <td><span th:text="${localVersion}"></span></td>
+        </tr>
+    </table>
+
+    <h2>Backend version</h2>
+    <table>
+        <tr>
+            <td class="headerCell">Id</td>
+            <td><span th:text="${externalId}"></span></td>
+        </tr>
+        <tr>
+            <td class="headerCell">GroupID</td>
+            <td><span th:text="${externalGroupId}"></span></td>
+        </tr>
+        <tr>
+            <td class="headerCell">ArtifactId</td>
+            <td><span th:text="${externalArtifactId}"></span></td>
+        </tr>
+        <tr>
+            <td class="headerCell">Version</td>
+            <td><span th:text="${externalVersion}"></span></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
